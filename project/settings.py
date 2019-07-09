@@ -39,8 +39,7 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
-ALLOWED_HOSTS = ['103.255.5.65', '127.0.0.1', '192.168.0.149', 'localhost',
-]
+ALLOWED_HOSTS = ['https://localhost:4200',]
 
 
 
