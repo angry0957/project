@@ -1,0 +1,7 @@
+node_modules
+client/node_modules
+envname
+myenv
+config/credentials.py
+*.pyc
+db.sqlite3
