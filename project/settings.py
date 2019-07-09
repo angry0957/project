@@ -27,7 +27,6 @@ SECRET_KEY = '%e2!nyfh2qo$^0b-ui^jqh@2*)bh3a5()n%zb!da-yvb*%&7!x'
 DEBUG = True
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = ('*')
 CORS_ALLOW_HEADERS = (
     'accept',
     'accept-encoding',
@@ -41,7 +40,9 @@ CORS_ALLOW_HEADERS = (
 )
 ALLOWED_HOSTS = ['https://localhost:4200',]
 
-
+CORS_ORIGIN_WHITELIST = (
+    'https://localhost:4200',
+)
 
 # Application definition
 
