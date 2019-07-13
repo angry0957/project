@@ -39,9 +39,8 @@ CORS_ALLOW_HEADERS = (
     'x-requested-with',
 )
 # ALLOWED_HOSTS = ['*']
-
 CORS_ORIGIN_WHITELIST = (
-    'https:://clientw.herokuapp.com',
+    'https://clientw.herokuapp.com',
 )
 
 # Application definition
