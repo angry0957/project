@@ -41,7 +41,7 @@ CORS_ALLOW_HEADERS = (
 # ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = (
-    'clientw.herokuapp.com',
+    'https:://clientw.herokuapp.com',
     'localhost:4200',
 )
 
