@@ -16,13 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.views.generic.base import TemplateView
-from Route import views as myview
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/v1/', include('Route.urls')),
     path('rest-auth/', include('rest_auth.urls')),
     path('signin/', TemplateView.as_view(template_name='login.html')),
-    path('data/', myview.DataViewSet.as_view()),
 
 ]

@@ -38,10 +38,11 @@ CORS_ALLOW_HEADERS = (
     'x-csrftoken',
     'x-requested-with',
 )
-ALLOWED_HOSTS = ['https://localhost:4200',]
+# ALLOWED_HOSTS = ['*']
 
 CORS_ORIGIN_WHITELIST = (
-    'https://localhost:4200',
+    'clientw.herokuapp.com',
+    'localhost:4200',
 )
 
 # Application definition
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'Route',
+    'Data',
     'rest_framework.authtoken', # new!
     'rest_auth', # new!
     'corsheaders',
@@ -65,7 +67,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
+    # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
