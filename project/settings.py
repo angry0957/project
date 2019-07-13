@@ -42,7 +42,6 @@ CORS_ALLOW_HEADERS = (
 
 CORS_ORIGIN_WHITELIST = (
     'https:://clientw.herokuapp.com',
-    'localhost:4200',
 )
 
 # Application definition
