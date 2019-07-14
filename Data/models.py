@@ -15,6 +15,8 @@ class Data(models.Model):
     income = models.IntegerField()
     cheque = models.IntegerField()
     date = models.DateTimeField(default=now, editable=False)
+    updated_at = models.DateTimeField(auto_now=True)
+
 
     def __str__(self):
         """A string representation of the model."""
