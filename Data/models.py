@@ -14,8 +14,8 @@ class Data(models.Model):
     total_expense = models.IntegerField()
     income = models.IntegerField()
     cheque = models.IntegerField()
-    date = models.DateTimeField(default=now, editable=False)
-    updated_at = models.DateTimeField(auto_now=True)
+    date = models.DateTimeField(default=now, editable=True)
+    updated_at = models.DateTimeField(auto_now=True, editable=True)
 
 
     def __str__(self):
