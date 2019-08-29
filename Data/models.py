@@ -14,10 +14,10 @@ class Data(models.Model):
     total_expense = models.IntegerField()
     income = models.IntegerField()
     cheque = models.IntegerField()
-    date = models.DateTimeField(default=now, editable=False)
-    updated_at = models.DateTimeField(auto_now=True)
+    date = models.DateTimeField()
+    updated_at = models.DateTimeField()
 
 
     def __str__(self):
         """A string representation of the model."""
-        return self.bill
+        return str(self.bill)
